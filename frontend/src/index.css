@@ -1,0 +1,264 @@
+body {
+  font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+body input, body select, body textarea, body button:focus {
+  outline: 0;
+  outline: none;
+}
+body .navigation {
+  background-color: rgb(0, 153, 255);
+}
+body .navigation .container .navbar-collapse ul {
+  margin-left: auto !important;
+}
+body .navigation .container .navbar-collapse ul li a {
+  color: white;
+}
+body .navigation .container .navbar-collapse ul li .logoutBut {
+  background-color: red;
+  color: white;
+  border: 0px solid red;
+  border-radius: 5px;
+}
+body .navigation .container .navbar-collapse ul li .logoutBut:hover {
+  background-color: rgb(211, 0, 0);
+}
+body .login {
+  min-height: 100vh;
+}
+body .login .loginForm {
+  width: 50%;
+  background-color: rgb(0, 153, 255);
+  padding: 20px 20px;
+  color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 1px black;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+body .login .loginForm .form .inputField {
+  height: 40px;
+  color: white !important;
+  border-color: white !important;
+  margin-top: 40px;
+}
+body .login .loginForm .form p {
+  margin-top: 30px;
+}
+body .login .loginForm .form p a {
+  color: white;
+  text-decoration: none;
+}
+body .login .loginForm .form p a:hover {
+  text-decoration: underline;
+}
+body .login .loginForm .form button {
+  margin-top: 5px;
+  padding: 5px 20px;
+  background-color: white;
+  color: rgb(0, 153, 255);
+  border: 1px solid rgb(0, 153, 255);
+  font-size: larger;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+body .login .loginForm .form button:hover {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0);
+  background-color: rgb(0, 153, 255);
+  border-color: white;
+  color: white;
+}
+body .foldersPage .foldersTab {
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 40px;
+  min-height: 80vh;
+}
+body .foldersPage .foldersTab .foldersHead {
+  background-color: rgb(0, 153, 255);
+  border-radius: 5px 5px 0 0;
+  padding: 3px 10px;
+  padding-top: 8px;
+  color: white;
+}
+body .foldersPage .foldersTab .foldersBody .createFolder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+body .foldersPage .foldersTab .foldersBody .createFolder .container .row {
+  padding: 0 !important;
+}
+body .foldersPage .foldersTab .foldersBody .createFolder .container .row .coll input {
+  width: 100%;
+  padding: 5px 8px;
+  height: 30px;
+  border: 1px solid rgb(0, 153, 255);
+  border-radius: 2px;
+}
+body .foldersPage .foldersTab .foldersBody .createFolder .container .row .coll button {
+  width: 100%;
+  border: 1px solid rgb(0, 153, 255);
+  background-color: rgb(0, 153, 255);
+  height: 30px;
+  border-radius: 2px;
+  color: white;
+}
+body .foldersPage .foldersTab .foldersBody .createFolder .container .row .coll button:hover {
+  background-color: rgb(0, 135, 224);
+}
+body .foldersPage .foldersTab .foldersBody .folders {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+body .foldersPage .foldersTab .foldersBody .folders .row .folderCol {
+  text-align: center;
+}
+body .foldersPage .foldersTab .foldersBody .folders .row .folderCol img {
+  width: 60%;
+}
+body .foldersPage .foldersTab .foldersBody .folders .row .folderCol a {
+  color: black;
+  text-decoration: none;
+}
+body .foldersPage .foldersTab .foldersBody .folders .row .folderCol:hover {
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+body .foldersPage .foldersTab .foldersBody .folders .row .folderCol:hover a {
+  color: rgb(0, 153, 255);
+}
+body .foldersPage .foldersTab .foldersBody .folders .row .folderCol:hover img {
+  filter: contrast(1.5);
+  transform: scale(1.2);
+}
+body .folderView {
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 40px;
+  min-height: 80vh;
+  margin-bottom: 30px;
+}
+body .folderView .pendingIcon {
+  color: rgb(190, 190, 190);
+}
+body .folderView .completedIcon {
+  color: rgb(0, 208, 0);
+}
+body .folderView .bugIcon {
+  color: red;
+}
+body .folderView .foldersHead {
+  background-color: rgb(0, 153, 255);
+  border-radius: 5px 5px 0 0;
+  padding: 3px 10px;
+  padding-top: 8px;
+  color: white;
+}
+body .folderView .foldersHead .controlsButtons {
+  text-align: right;
+}
+body .folderView .foldersHead .controlsButtons .deleteBut {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+body .folderView .foldersHead .controlsButtons .deleteBut:hover {
+  background-color: rgb(231, 1, 1);
+  border: 1px solid rgb(231, 1, 1);
+}
+body .folderView .createTask {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+body .folderView .createTask .container .row {
+  padding: 0 !important;
+}
+body .folderView .createTask .container .row .coll input {
+  width: 100%;
+  padding: 5px 8px;
+  height: 30px;
+  border: 1px solid rgb(0, 153, 255);
+  border-radius: 2px;
+}
+body .folderView .createTask .container .row .coll button {
+  width: 100%;
+  border: 1px solid rgb(0, 153, 255);
+  background-color: rgb(0, 153, 255);
+  height: 30px;
+  border-radius: 2px;
+  color: white;
+}
+body .folderView .createTask .container .row .coll button:hover {
+  background-color: rgb(0, 135, 224);
+}
+body .folderView .statusBar {
+  background-color: rgb(228, 228, 228);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body .folderView .statusBar p {
+  margin-bottom: 0 !important;
+}
+body .folderView .folderBody {
+  padding-bottom: 10px;
+}
+body .folderView .singleTask .capsule {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  padding-top: 7px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+body .folderView .singleTask .capsule .controls {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+body .folderView .singleTask .capsule .controls .dropdown {
+  display: inline !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+body .folderView .singleTask .capsule .controls .dropdown .btn {
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding: 3px !important;
+  margin: 0 !important;
+  color: black !important;
+  border: 0;
+}
+body .folderView .singleTask .capsule .controls .dropdown .dropdown-menu {
+  padding: 0 !important;
+}
+body .folderView .singleTask .capsule .controls .deleteBut {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  color: red;
+  font-size: large;
+}
+body .folderView .singleTask .capsule .controls .deleteBut:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 992px) {
+  .login .loginForm {
+    width: 80% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .login .loginForm {
+    width: 80% !important;
+  }
+}/*# sourceMappingURL=index.css.map */

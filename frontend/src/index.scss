@@ -1,0 +1,323 @@
+$main-color: rgb(0, 153, 255);
+$main-color-dark: rgb(0, 135, 224);
+
+body{
+    font-family: 'Montserrat', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(243, 243, 243);
+
+    input, select, textarea, button:focus{
+        outline: 0;
+        outline: none;
+    }
+
+    .navigation{
+        background-color: $main-color;
+        .container{
+            .navbar-brand{
+
+            }
+            .navbar-collapse{
+                ul{
+                    margin-left: auto !important;
+                    li{
+                        a{
+                            color: white;
+                        }
+                        .logoutBut{
+                            background-color: red;
+                            color: white;
+                            border: 0px solid red;
+                            border-radius: 5px;
+                            &:hover{
+                                background-color: rgb(211, 0, 0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .login{
+        min-height: 100vh;
+        .loginForm{
+            width: 50%;
+            background-color: $main-color;
+            padding: 20px 20px;
+            color: white;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px 1px black;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            -ms-transform: translateY(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateY(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            .form{
+                .inputField{
+                    // width: 100%;
+                    height: 40px;
+                    color: white !important;
+                    border-color: white !important;
+                    margin-top: 40px;
+                }
+                p{
+                    margin-top: 30px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                button{
+                    margin-top: 5px;
+                    padding: 5px 20px;
+                    background-color: white;
+                    color: $main-color;
+                    border: 1px solid $main-color;
+                    font-size: larger;
+                    border-radius: 3px;
+                    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+                    &:hover{
+                        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0);
+                        background-color: $main-color;
+                        border-color: white;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .foldersPage{
+        .foldersTab{
+            background-color: white;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin-top: 40px;
+            min-height: 80vh;
+            .foldersHead{
+                background-color: $main-color;
+                border-radius: 5px 5px 0 0;
+                padding: 3px 10px;
+                padding-top: 8px;
+                color: white;
+            }
+            .foldersBody{
+                .createFolder{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    .container{
+                        .row{
+                            padding: 0 !important;
+                            .coll{
+                                input{
+                                    width: 100%;
+                                    padding: 5px 8px;
+                                    height: 30px;
+                                    border: 1px solid $main-color;
+                                    border-radius: 2px;
+                                }
+                                button{
+                                    width: 100%;
+                                    border: 1px solid $main-color;
+                                    background-color: $main-color;
+                                    height: 30px;
+                                    border-radius: 2px;
+                                    color: white;
+                                    &:hover{
+                                        background-color: $main-color-dark;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .folders{
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    .row{
+                        .folderCol{
+                            text-align: center;
+                            img{
+                                width: 60%;
+                            }
+                            a{
+                                color: black;
+                                text-decoration: none;
+                            }
+                            &:hover{
+                                color: $main-color;
+                                cursor: pointer;
+                                a{
+                                    color: $main-color;
+                                }
+                                img{
+                                    filter: contrast(1.5);
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .folderView{
+        background-color: white;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin-top: 40px;
+        min-height: 80vh;
+        margin-bottom: 30px;
+        .pendingIcon{
+            color: rgb(190, 190, 190);
+        }
+        .completedIcon{
+            color: rgb(0, 208, 0);
+        }
+        .bugIcon{
+            color: red;
+        }
+        .foldersHead{
+            background-color: $main-color;
+            border-radius: 5px 5px 0 0;
+            padding: 3px 10px;
+            padding-top: 8px;
+            color: white;
+            .controlsButtons{
+                text-align: right;
+                .deleteBut{
+                    background-color: red;
+                    color: white;
+                    border: 1px solid red;
+                    border-radius: 3px;
+                    &:hover{
+                        background-color: rgb(231, 1, 1);
+                        border: 1px solid rgb(231, 1, 1);
+                    }
+                }
+            }
+        }
+        .createTask{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .container{
+                .row{
+                    padding: 0 !important;
+                    .coll{
+                        input{
+                            width: 100%;
+                            padding: 5px 8px;
+                            height: 30px;
+                            border: 1px solid $main-color;
+                            border-radius: 2px;
+                        }
+                        button{
+                            width: 100%;
+                            border: 1px solid $main-color;
+                            background-color: $main-color;
+                            height: 30px;
+                            border-radius: 2px;
+                            color: white;
+                            &:hover{
+                                background-color: $main-color-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .statusBar{
+            background-color: rgb(228, 228, 228);
+            // padding: 10px 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            p{
+                margin-bottom: 0 !important;
+            }
+        }
+        .folderBody{
+            padding-bottom: 10px;
+        }
+        .singleTask{
+            .capsule{
+                position: relative;
+                background-color: white;
+                box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3);
+                // width: auto !important;
+                // display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                padding-top: 7px;
+                padding-bottom: 1px;
+                border-radius: 10px;
+                color: $main-color;
+                cursor: pointer;
+                &:hover{
+                    // background-color: $main-color;
+                    // color: white;
+                }
+                .controls{
+                    position: absolute;
+                    right: 15px;
+                    top: 5px;
+                    .dropdown{
+                        display: inline !important;
+                        background-color: rgba(0, 0, 0, 0) !important;
+                        // top: -1px;
+                        // position: absolute;
+                        // right: 30px;
+                        .btn{
+                            background-color: rgba(0,0,0,0) !important;
+                            padding: 3px !important;
+                            margin: 0 !important;
+                            color: black !important;
+                            border: 0;
+                        }
+                        .dropdown-menu{
+                            padding: 0 !important;
+                        }
+                    }
+                    .deleteBut{
+                        background-color: rgba(0, 0, 0, 0);
+                        border: 0;
+                        color: red;
+                        font-size: large;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .login{
+        .loginForm{
+            width: 80% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .login{
+        .loginForm{
+            width: 80% !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .login{
+        .loginForm{
+        }
+    }
+}
